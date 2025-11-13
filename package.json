@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-java",
-  "version": "0.23.5",
+  "version": "0.23.6",
   "description": "Java grammar for tree-sitter",
   "repository": "https://github.com/tree-sitter/tree-sitter-java",
   "license": "MIT",
@@ -66,5 +66,7 @@
     "prestart": "tree-sitter build --wasm",
     "start": "tree-sitter playground",
     "test": "node --test bindings/node/*_test.js"
+    ,
+    "prebuild": "prebuildify --napi --strip --arch x64+arm64 --platform linux+darwin+win32"
   }
 }
