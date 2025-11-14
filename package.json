@@ -1,6 +1,6 @@
 {
   "name": "@sengac/tree-sitter-java",
-  "version": "0.25.14",
+  "version": "0.25.15",
   "description": "Java grammar for tree-sitter",
   "repository": "https://github.com/sengac/tree-sitter-java",
   "license": "MIT",
@@ -70,5 +70,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gypfile": false
 }
